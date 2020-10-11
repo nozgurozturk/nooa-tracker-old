@@ -1,8 +1,8 @@
 import typescript from '@rollup/plugin-typescript';
 import { terser } from 'rollup-plugin-terser'
 export default {
-    input: 'index.ts',
-    output: [{
+    input: './src/index.ts',
+    output: [{   
         file: './dist/nooa.js',
         format: 'cjs',
     },
@@ -15,6 +15,6 @@ export default {
     plugins: [typescript({
         lib: ["es5", "es6", "esnext", "dom"], 
         target: "es5",
-        exclude: ['./node_modules'],
+        exclude: ['./node_modules', './dist'],
     })],
 };

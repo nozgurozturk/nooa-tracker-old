@@ -62,5 +62,5 @@ export class Nooa {
 }
 
 declare global {
-    interface Window { noaa: Nooa }
+    interface Window { nooa: Nooa }
 }

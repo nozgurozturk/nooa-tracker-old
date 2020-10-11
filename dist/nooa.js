@@ -645,9 +645,9 @@ var Nooa = /** @class */ (function () {
 }());
 
 (function (window) {
-    if (!window.noaa) {
+    if (!window.nooa) {
         var nooa = new Nooa();
         nooa.set();
-        window.noaa = nooa;
+        window.nooa = nooa;
     }
 })(window);
